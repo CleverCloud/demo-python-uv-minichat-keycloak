@@ -1,7 +1,7 @@
 [project]
-name = "1-minichat"
+name = "1-2-securechat"
 version = "0.1.0"
-description = "Add your description here"
+description = "Secure chat with Keycloak authentication"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -9,4 +9,7 @@ dependencies = [
     "flask-sqlalchemy>=3.1.0",
     "psycopg2-binary>=2.9.0",
     "python-dotenv>=1.0.0",
+    "authlib>=1.3.0",
+    "flask-session>=0.8.0",
+    "requests>=2.31.0",
 ]
