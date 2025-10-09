@@ -15,7 +15,17 @@ This is why there is two files `main.py` and `main_with_keycloak.py`, and two in
 - PostgreSQL Clever Cloud add-on
 - (optionnal) Keycloak Clever Cloud add-on
 
-## Clever Cloud Deployment
+## Clever Cloud Deployment - With Terraform
+1. **Add your Organisation ID** in `terraform/clevercloud.tf` file (line 13)
+2. **Initialize Terraform**:
+```bash
+terraform init
+terraform apply
+```
+
+> to remove the resources created by terraform, run `terraform destroy`
+
+## Clever Cloud Deployment - From local repository
 ### Environment Configuration
 
 For `uv` projects on Clever Cloud, the application must listens on port `9000` with `0.0.0.0` as host.
